@@ -1,0 +1,108 @@
+.kanban-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 42px;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #6b7280;
+}
+
+.task-form {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.task-form button {
+  padding: 14px 24px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.column {
+  background: #e5e7eb;
+  padding: 16px;
+  border-radius: 14px;
+  min-height: 450px;
+}
+
+.column h2 {
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.task-list {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  cursor: grab;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #2563eb;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.card span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.cdk-drag-preview {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.3;
+}
+
+@media (max-width: 900px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+}

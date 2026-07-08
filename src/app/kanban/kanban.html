@@ -1,0 +1,81 @@
+<div class="kanban-page">
+
+  <header class="header">
+    <h1>Kabanic</h1>
+    <p>Organize suas tarefas no estilo Kanban</p>
+  </header>
+
+  <section class="task-form">
+    <input
+      type="text"
+      placeholder="Digite uma nova tarefa..."
+      [(ngModel)]="novaTarefa"
+      (keyup.enter)="adicionarTarefa()">
+
+    <button (click)="adicionarTarefa()">
+      Adicionar
+    </button>
+  </section>
+
+  <main class="board">
+
+    <section class="column">
+      <h2>A Fazer</h2>
+
+      <div
+        cdkDropList
+        #todoList="cdkDropList"
+        [cdkDropListData]="todo"
+        [cdkDropListConnectedTo]="[doingList, doneList]"
+        class="task-list"
+        (cdkDropListDropped)="drop($event)">
+
+        <div class="card" *ngFor="let tarefa of todo" cdkDrag>
+          <h3>{{ tarefa.titulo }}</h3>
+          <span>Pendente</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="column">
+      <h2>Em Andamento</h2>
+
+      <div
+        cdkDropList
+        #doingList="cdkDropList"
+        [cdkDropListData]="doing"
+        [cdkDropListConnectedTo]="[todoList, doneList]"
+        class="task-list"
+        (cdkDropListDropped)="drop($event)">
+
+        <div class="card" *ngFor="let tarefa of doing" cdkDrag>
+          <h3>{{ tarefa.titulo }}</h3>
+          <span>Em progresso</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="column">
+      <h2>Concluído</h2>
+
+      <div
+        cdkDropList
+        #doneList="cdkDropList"
+        [cdkDropListData]="done"
+        [cdkDropListConnectedTo]="[todoList, doingList]"
+        class="task-list"
+        (cdkDropListDropped)="drop($event)">
+
+        <div class="card" *ngFor="let tarefa of done" cdkDrag>
+          <h3>{{ tarefa.titulo }}</h3>
+          <span>Finalizado</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
