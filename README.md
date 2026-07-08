@@ -96,7 +96,7 @@ src
 ## Clone the repository
 
 ```bash
-git clone https://github.com/SEU-USUARIO/kabanic.git
+git clone https://github.com/capf01/kanbanic
 ```
 
 ## Navigate to the project
