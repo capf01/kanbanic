@@ -1,59 +1,253 @@
-# Kanbanic
+# 🚀 Kabanic
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-21-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/Angular_CDK-Drag_&_Drop-DD0031?style=for-the-badge&logo=angular">
+  <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge">
+</p>
 
-## Development server
+<p align="center">
+A modern Kanban board built with Angular, inspired by Trello.
+</p>
 
-To start a local development server, run:
+---
+
+## 📖 About
+
+**Kabanic** is a Kanban task management application inspired by Trello, developed with Angular and TypeScript.
+
+The project was created to demonstrate modern Front-end development practices such as component-based architecture, reusable code, state management, Drag & Drop interactions, and responsive UI design.
+
+This repository is part of my software engineering portfolio and showcases my skills in building scalable Angular applications.
+
+---
+
+# ✨ Features
+
+- ✅ Create tasks
+- ✅ Edit tasks
+- ✅ Delete tasks
+- ✅ Drag & Drop cards
+- ✅ Multiple Kanban columns
+- ✅ Responsive interface
+- ✅ Local Storage persistence
+- 🚧 User authentication
+- 🚧 Dark Mode
+- 🚧 Labels
+- 🚧 Due dates
+- 🚧 Search & Filters
+- 🚧 REST API Integration
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Description |
+|------------|-------------|
+| Angular 21 | Front-end Framework |
+| TypeScript | Main language |
+| Angular CDK | Drag & Drop |
+| HTML5 | Markup |
+| CSS3 | Styling |
+| LocalStorage | Local persistence |
+
+---
+
+# 📂 Project Structure
+
+```
+src
+│
+├── app
+│   ├── auth
+│   ├── board
+│   ├── card
+│   ├── dashboard
+│   ├── models
+│   ├── services
+│   ├── shared
+│   └── components
+│
+├── assets
+└── environments
+```
+
+---
+
+# 📸 Screenshots
+
+## Dashboard
+
+> Coming soon
+
+---
+
+## Kanban Board
+
+> Coming soon
+
+---
+
+# 🚀 Getting Started
+
+## Clone the repository
+
+```bash
+git clone https://github.com/SEU-USUARIO/kabanic.git
+```
+
+## Navigate to the project
+
+```bash
+cd kabanic
+```
+
+## Install dependencies
+
+```bash
+npm install
+```
+
+## Start development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
+# 🎯 Roadmap
+
+## Version 1.0
+
+- [x] Project setup
+- [ ] Dashboard
+- [ ] Kanban Board
+- [ ] Drag & Drop
+- [ ] CRUD Tasks
+- [ ] Responsive Layout
+
+## Version 2.0
+
+- [ ] Authentication
+- [ ] User Profiles
+- [ ] Notifications
+- [ ] Search
+- [ ] Filters
+- [ ] Labels
+
+## Version 3.0
+
+- [ ] REST API
+- [ ] JWT Authentication
+- [ ] PostgreSQL
+- [ ] Docker
+- [ ] Deployment
+
+---
+
+# 💻 Architecture
+
+```
+Presentation
+      │
+Components
+      │
+Services
+      │
+Models
+      │
+Local Storage / API
 ```
 
-## Building
+---
 
-To build the project run:
+# 📚 Learning Goals
+
+This project focuses on improving skills in:
+
+- Angular Architecture
+- TypeScript
+- Component Communication
+- State Management
+- Drag & Drop
+- SOLID Principles
+- Clean Code
+- Responsive Design
+- REST API Integration
+
+---
+
+# 🌟 Future Improvements
+
+- Real-time collaboration
+- Comments
+- File attachments
+- Activity history
+- Team workspaces
+- Calendar view
+- Email notifications
+- PWA Support
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the project
+
+2. Create a feature branch
 
 ```bash
-ng build
+git checkout -b feature/new-feature
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+3. Commit your changes
 
 ```bash
-ng test
+git commit -m "feat: add new feature"
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+4. Push to your branch
 
 ```bash
-ng e2e
+git push origin feature/new-feature
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+5. Open a Pull Request
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**César Augusto Pacheco Ferreira**
+
+Software Developer • Full Stack Developer
+
+📧 Contact: *cesaraugustopachecoferreira@gmail.com*
+
+💼 LinkedIn: *https://www.linkedin.com/in/capf01/*
+
+🐙 GitHub: https://github.com/capf01
+
+---
+
+<p align="center">
+Made with ❤️ using Angular
+</p>
